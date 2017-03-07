@@ -17,7 +17,7 @@ defmodule CuratorRegisterable.Mixfile do
       start_permanent: Mix.env == :prod,
       aliases: aliases,
       deps: deps,
-      description: "Support password based sign-in by comparing the password to a hashed password",
+      description: "A Generator to support user registration",
       package: package(),
       source_url: @url,
       homepage_url: @url,
@@ -33,8 +33,8 @@ defmodule CuratorRegisterable.Mixfile do
     [applications: _applications(Mix.env)]
   end
 
-  defp _applications(:test), do: [:postgrex, :ecto, :comeonin, :logger]
-  defp _applications(_), do: [:comeonin, :logger]
+  defp _applications(:test), do: [:postgrex, :ecto, :logger]
+  defp _applications(_), do: [:logger]
 
   defp deps do
     [

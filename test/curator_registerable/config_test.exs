@@ -9,8 +9,4 @@ defmodule CuratorRegisterable.ConfigTest do
   test "the user_schema" do
     assert CuratorRegisterable.Config.user_schema == CuratorRegisterable.Test.User
   end
-
-  test "the default crypto_mod" do
-    assert CuratorRegisterable.Config.crypto_mod == Comeonin.Bcrypt
-  end
 end

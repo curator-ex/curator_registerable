@@ -7,7 +7,6 @@ defmodule CuratorRegisterable.Config do
       config :curator_registerable, CuratorRegisterable,
         repo: CuratorRegisterable.Test.Repo,
         user_schema: CuratorRegisterable.Test.User,
-        crypto_mod: Comeonin.Bcrypt
 
   """
 
@@ -17,10 +16,6 @@ defmodule CuratorRegisterable.Config do
 
   def user_schema do
     config(:user_schema, Curator.Config.user_schema)
-  end
-
-  def crypto_mod do
-    config(:crypto_mod, Comeonin.Bcrypt)
   end
 
   @doc false
