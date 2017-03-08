@@ -56,7 +56,7 @@ This module assumes you're using [Database Authenticatable](https://github.com/c
     end
     ```
 
-  5. Update `lib/<otp_app>/curator_hooks`
+  5. Update `lib/<otp_app>/curator_hooks.ex`
 
     ```elixir
     def after_extension(conn, :registration, user) do
